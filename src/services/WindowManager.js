@@ -139,11 +139,11 @@ class WindowManager {
       const screenH = workArea.height || screen.getPrimaryDisplay().workAreaSize.height
 
       const hasWebcam = !!(settings && (settings.recordWebcam || settings.defaultRecordWebcam))
-      let winWidth = 190 // Ancho para timer + pause + stop
-      let winHeight = 50
+      let winWidth = 240
+      let winHeight = 56
 
       if (hasWebcam) {
-        winWidth = 200 // Un poco más si hay webcam
+        winWidth = 250
       }
 
       const leftMargin =
