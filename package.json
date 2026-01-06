@@ -150,11 +150,35 @@
       "icon": "src/icon.png",
       "publisherName": "StreamSnap Team"
     },
+    // "linux": {
+    //   "target": "AppImage",
+    //   "icon": "src/icon.png",
+    //   "category": "AudioVideo"
+    // },
     "linux": {
-      "target": "AppImage",
-      "icon": "src/icon.png",
-      "category": "AudioVideo"
-    },
+      "target": [
+        "AppImage",
+        "deb",
+        "rpm"
+        ],
+        "icon": "src/icon.png",
+        "category": "AudioVideo",
+        "desktop": {
+          "Name": "StreamSnap",
+          "Comment": "Professional screen recording application",
+          "GenericName": "Screen Recorder",
+          "Type": "Application",
+          "Terminal": false,
+          "StartupNotify": true,
+          "Categories": "AudioVideo;Video;Recorder;",
+          "MimeType": "video/mp4;video/webm;",
+          "Keywords": "screen;recording;video;capture;"
+        },
+        "maintainer": "StreamSnap Team <contact@streamsnap.app>",
+        "vendor": "StreamSnap Team",
+        "synopsis": "Professional screen recording application",
+        "description": "StreamSnap is a professional screen recording application built with Electron, featuring Google Drive integration and advanced recording capabilities."
+      },
     "nsis": {
       "oneClick": false,
       "perMachine": false,
